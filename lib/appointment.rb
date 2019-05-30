@@ -11,7 +11,7 @@ class Appointment
     @doctor = doctor
     @doctor.appointments << self
     @doctor.patients << patient
-    
+
     @@all << self
   end
 
