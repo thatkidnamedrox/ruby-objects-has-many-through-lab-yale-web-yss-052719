@@ -6,7 +6,7 @@ class Appointment
     @date = date
     @patient = patient
     @patient.appointments << self
-    @patient.doctors << self
+    @patient.doctors << doctor
 
     @doctor = doctor
     @doctor.appointments << self
