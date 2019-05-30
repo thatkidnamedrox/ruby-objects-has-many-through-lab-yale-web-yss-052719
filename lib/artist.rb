@@ -14,11 +14,11 @@ class Artist
   end
 
   def new_song(name, genre)
-    puts name, genre
+    puts name, genre.inspect
     genre.songs << song
     genre.artists << self
     song = Song.new(name, self, genre)
-
+    
 
     @songs << song
     @genres << genre
