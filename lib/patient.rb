@@ -8,9 +8,8 @@ class Patient
   end
 
   def new_appointment(doctor, date)
-    puts appointment.inspect
     appointment = Appointment.new(date, self, doctor)
-
+    puts appointment.inspect
   end
 
   def self.all
