@@ -18,12 +18,13 @@ class Artist
     puts genre.inspect
     song = Song.new(name, self, genre)
     genre.songs << song
-    genre.artists << self
+
 
     puts genre.inspect
 
     @songs << song
     @genres << genre
+    genre.artists << self
   end
 
 end
