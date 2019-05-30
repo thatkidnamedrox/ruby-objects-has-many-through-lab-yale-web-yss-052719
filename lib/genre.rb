@@ -15,6 +15,5 @@ class Genre
     @@all
   end
 
-  def
 
 end
