@@ -10,6 +10,7 @@ class Appointment
   end
 
   def self.all
+    puts @@all.inspect
     @@all
   end
 
