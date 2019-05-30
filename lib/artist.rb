@@ -14,17 +14,9 @@ class Artist
   end
 
   def new_song(name, genre)
-    puts name
-    puts genre.inspect
+
     song = Song.new(name, self, genre)
-    genre.songs << song
-
-
-    puts genre.inspect
-
-    @songs << song
-    @genres << genre
-    genre.artists << self
+    puts song.inspect
   end
 
 end
